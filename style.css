@@ -1,0 +1,236 @@
+body {
+  color: #def2f1;
+  font-family: "Rubik";
+  text-align: center;
+}
+
+h1 {
+  margin: 4vh 0;
+  font-weight: 500;
+  font-size: clamp(38px, 4vw, 54px);
+  letter-spacing: 2px;
+}
+
+h2 {
+  margin: 4vh 0;
+  font-weight: 500;
+  font-size: clamp(34px, 4vw, 50px);
+  letter-spacing: 2px;
+}
+
+h5 {
+  margin: 4vh 0;
+  font-size: clamp(18px, 2vw, 36px);
+  font-weight: 100;
+  font-style: italic;
+}
+
+section {
+  padding: 4vh 0 8vh 0;
+}
+
+/*
+https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
+
+https://css-tricks.com/hash-tag-links-padding/
+
+*/
+.target-spacer { 
+  position: relative;
+  top: calc(-78px - 4vh); 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+/* A block spacer matching the header height to push the start of the page content below the navbar. */
+#top-of-page-spacer {
+  height: 78px;
+}
+
+/* Styles for the header navigation bar. */
+.navbar {
+  background-color:  #000000;
+  
+  /* By setting a minimum height, the navbar can expand when the hamburger menu is open. */
+  min-height: 78px;
+
+  /* Adding a box shadow to only the bottom of navbar.
+     (see https://css-tricks.com/snippets/css/css-box-shadow/#one-side-only)
+  */
+   box-shadow: 0 8px 6px -6px rgba(0,0,0,.4);
+
+  /* Fix navbar to the top and force it to stretch across page now that it's out of the flow. */
+  position: fixed;
+  left: 0;
+  right: 0;
+
+  /* Needed to prevent later relative positioned elements from displaying on top of navbar. */
+  z-index: 2;
+}
+
+.navbar * {
+  color: #def2f1 !important;
+}
+
+.navbar *:hover {
+  color: #a9c5c4 !important;
+}
+
+#hero-section {
+  color: #ffffff;
+  background-image: 
+    linear-gradient(rgba(23, 37, 42, .6), rgba(23, 37, 42, .8)),
+    url("img/hijin.jpg");
+
+  background-size: cover;
+
+  padding: 20vh 0 10vh 0;
+}
+
+#profile-picture-container {
+  margin: 0 auto;
+
+  /* This allows us to scale the image with the viewport width while it is between our min and max. */
+  width: clamp(180px, 25vw, 300px);
+
+  /* Same for height. */
+  height: clamp(180px, 25vw, 300px);
+
+  border: 20px solid rgba(15, 24, 27, 0.2);
+  border-radius: 50%;
+}
+
+#profile-picture {
+  width: 100%;
+  height:100%;
+  border-radius: 50%;
+  background-image: url("img/hijin2.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+#mission-section {
+  background-color: #17252a;
+} 
+
+#mission-image {
+  border-radius: 10px;
+  background-image: url("img/haha.jpg");
+  background-size: cover;
+  background-position: center;
+  height: clamp(300px, 30vh, 600px);
+}
+
+#mission-text-container {
+  position: relative;
+  height: clamp(300px, 30vh, 600px);
+}
+
+#mission-text {
+  position: absolute;
+  top: 50%;
+  font-size: clamp(16px, 1.2vw, 30px);
+  text-align: left;
+  transform: translateY(-50%);
+}
+
+#skills-section {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.skill-container {
+  margin-top: 2vh;
+}
+
+.skill-container img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  filter: grayscale(80%);
+}
+
+.skill-container div {
+  padding: 24px;
+  font-size: clamp(24px, 1vw, 36px);
+  text-align: center;
+}
+
+#inspiration-section {
+  background-color: #000000;
+}
+
+
+/* inspiration images should all be 900x600.
+  must remove d-none from example to get captions to show on mobile.
+ https://stackoverflow.
+ 
+ https://stackoverflow.com/questions/42200733/why-the-caption-text-is-not-visible-in-carousel
+ 
+ com/questions/42451739/bootstrap-4-carousel-caption-is-not-visible-on-small-devices
+*/
+
+.carousel-inner {
+  max-height: 600px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.carousel-item::after {
+  content:" ";
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.3);
+} 
+
+.carousel h5 {
+  text-align: center;
+  font-size: min(36px, 3vw);
+  text-shadow: 2px 2px 2px #000000;
+  font-weight: 800;
+}
+
+.carousel h6 {
+  text-align: center;
+  font-size: min(24px, 2.5vw);
+  text-shadow: 1px 1px 2px #000000;
+  font-weight: 600;
+}
+
+.carousel-caption {
+  z-index: 1;
+}
+
+#imageCarousel {
+  margin-bottom: 4vh;
+}
+
+#contact-section {
+  color: #ffffff;
+  background-color: #000000;
+  font-size: clamp(50px, 6vw, 100px);
+}
+
+#contact-section i {
+  color: #ffffff;
+}
+
+#contact-section i:hover {
+  color: #00fff7;
+}
+
+
+#contact-section .row div {
+  margin: clamp(20px, 5vw, 200px) 0;
+}
+
+footer {
+  height: 80px;
+  background-color: #4d3654;
+  text-align: center;
+  line-height: 80px;
+}
+

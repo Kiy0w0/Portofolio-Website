@@ -1,0 +1,185 @@
+<!doctype html>
+
+<!-- Web Development Final Portfolio for Dr. Small -->
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <!-- Main Stylesheet -->
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+  <title>Kiyowo</title>
+</head>
+
+<body>
+  <!-- Our navbar that with a logo/brand the the left and a -->
+  <nav class="navbar navbar-light navbar-expand-md">
+
+    <!-- Snap nav content to responsive padding -->
+    <div class="container">
+
+      <!-- Creates logo on the left-most side of the navbar -->
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-house"></i>
+      </a>
+
+      <!-- This div groups our button and nav items.  Direct children of a container in a navbar default to "space in between" alignment. This means the div below will be push all the way to the right. -->
+      <div id="nav-item-container">
+        <!-- This button contains a "hamburger" icon and only visible below medium sized screens.  Clicking will expand the remaining nav items.  -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- The remaining nav bar items that will expand on sm and below or be visible at all times on md and above. -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#mission">Mission</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#inspiration">Inspiration</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+
+      </div> <!-- #nav-item-container -->
+    </div> <!-- .container -->
+  </nav>
+
+  <div id="top-of-page-spacer"></div>
+
+  <section id="hero-section">
+    <div class="container">
+      <div id="profile-picture-container">
+        <div id="profile-picture"></div>
+      </div>
+      <h1>Kiyowo</h1>
+      <h5>Heejin The Only One</h5>
+    </div>
+  </section>
+
+  <section id="mission-section">
+    <div class="target-spacer" id="mission"></div>
+    <div class="container">
+      <h2>Pic of the pic</h2>
+      <div class="row">
+        <div class="col-md-7" id="mission-image-container">
+          <div id="mission-image"></div>
+        </div>
+        <div class="col-md-5" id="mission-text-container">
+          <div id="mission-text">
+            Playing game 24/7 with my friend <3 </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="skills-section">
+    <div class="target-spacer" id="skills"></div>
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="row">
+        <div class="col-md-6 col-xl-3 skill-container">
+          <img src="img/skill-1.png">
+          <div>Structuring the web's content using modern semantic HTML.</div>
+        </div>
+        <div class="col-md-6 col-xl-3 skill-container">
+          <img src="img/skill-2.png">
+          <div>Presenting beautiful web designs and interactions using modern CSS.</div>
+        </div>
+        <div class="col-md-6 col-xl-3 skill-container">
+          <img src="img/skill-3.png">
+          <div>Rapidly developing responsive websites using the web's most popular framework.</div>
+        </div>
+        <div class="col-md-6 col-xl-3 skill-container">
+          <img src="img/skill-4.png">
+          <div>Making interactive experiences, games, web apps, and more using javascript.</div>
+        </div>
+      </div>
+  </section>
+
+  <section id="inspiration-section">
+    <div class="target-spacer" id="inspiration"></div>
+    <h2>Inspiration</h2>
+
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/bl.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5>Your Inspiration</h5>
+            <h6>Your Inspiration</h6>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/bl.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5>Your Inspiration</h5>
+            <h6>Your Inspiration</h6>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/bl.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5>Your Inspiration</h5>
+            <h6>Your Inspiration</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-section">
+    <div class="target-spacer" id="contact"></div>
+    <h2>Contact</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="https://twitter.com/">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <a href="https://wa.me/">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <a href="mailto:">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+      </div>
+  </section>
+
+  <footer>
+    &copy; KiyOwO 2022
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
